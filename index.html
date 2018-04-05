@@ -1,0 +1,28 @@
+<!Doctype html>
+<html ng-app="app">
+    <head>
+        <title>AngularJS UI Grid</title>
+        <link rel="styleSheet" href="node_modules/angular-ui-grid/ui-grid.css"/>
+        <link rel="styleSheet" href="app.css"/>
+    </head>
+    <body>
+
+        <div id="grid-container" ng-controller="MainCtrl as $ctrl">
+            <div id="grid" ui-grid="{data: $ctrl.myData}" class="grid"></div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-touch.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-animate.js"></script>
+        <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+        <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+        <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>
+        <script src="http://ui-grid.info/docs/grunt-scripts/lodash.min.js"></script>
+        <script src="http://ui-grid.info/docs/grunt-scripts/jszip.min.js"></script>
+        <script src="http://ui-grid.info/docs/grunt-scripts/excel-builder.dist.js"></script>
+        <script src="node_modules/angular-ui-grid/ui-grid.js"></script>
+
+        <script src="app.js"></script>
+
+    </body>
+</html>
