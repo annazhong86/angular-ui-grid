@@ -8,7 +8,8 @@
     <body>
 
         <div id="grid-container" ng-controller="MainCtrl as $ctrl">
-            <div id="grid" ui-grid="{data: $ctrl.myData}" class="grid"></div>
+            <button id='toggleEmployed' ng-click='$ctrl.toggleEmployed()' class="btn btn-success" >Toggle Employed</button>
+            <div id="grid" ui-grid="$ctrl.gridOptions" class="grid"></div>
         </div>
 
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>
@@ -23,6 +24,7 @@
         <script src="node_modules/angular-ui-grid/ui-grid.js"></script>
 
         <script src="app.js"></script>
+        <script src="app-data.js"></script>
 
     </body>
 </html>
