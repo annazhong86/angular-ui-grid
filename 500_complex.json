@@ -1,4 +1,4 @@
-angular.module('app').constant('myData', [
+[
     {
         "id": 0,
         "guid": "de3db502-0a33-4e47-a0bb-35b6235503ca",
@@ -17499,4 +17499,4 @@ angular.module('app').constant('myData', [
             }
         ]
     }
-]);
+]

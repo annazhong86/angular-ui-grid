@@ -1,4 +1,4 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html ng-app="app">
     <head>
         <title>AngularJS UI Grid</title>
@@ -8,8 +8,9 @@
     <body>
 
         <div id="grid-container" ng-controller="MainCtrl as $ctrl">
-            <button id='toggleEmployed' ng-click='$ctrl.toggleEmployed()' class="btn btn-success" >Toggle Employed</button>
-            <div id="grid" ui-grid="$ctrl.gridOptions" class="grid"></div>
+            <button ng-click='$ctrl.toggleGridFooter()' class="btn btn-success" >Toggle Grid Footer</button>
+            <button ng-click='$ctrl.toggleColumnFooter()' class="btn btn-success" >Toggle Column Footer</button>
+            <div id="grid" ui-grid="$ctrl.gridOptions" ui-grid-selection class="grid"></div>
         </div>
 
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>
